@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 :root {
     --background-light: rgb(243, 243, 243);
@@ -6,6 +7,7 @@
     --background-dark-variant: rgb(31, 31, 31);
     --background-white: rgb(255, 255, 255);
     --background-black: rgb(0, 0, 0);
+    --background-color: rgba(39, 39, 39, 0.1);
 
     --text-white: rgb(255, 255, 255);
     --text-white-variant: rgb(243, 243, 243);
@@ -133,7 +135,8 @@ section.projects button:hover {
 .projects {
     height: 800px;
     background-color: var(--background-light);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
 .projects-header {
@@ -199,7 +202,8 @@ article > div:nth-of-type(4) {
 }
 
 .project-details h1 {
-    font-size: 30px;
+    font-size: 27px;
+    text-transform: uppercase;
 }
 
 article div > h2 {
@@ -207,7 +211,10 @@ article div > h2 {
     font-size: 20px;
 }
 
-
+article > div:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
 
 /* Contact Section */
 
