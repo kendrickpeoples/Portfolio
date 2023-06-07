@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --background-light: rgb(243, 243, 243);
+    --background-dark: rgb(39, 39, 39);
+    --background-dark-variant: rgb(31, 31, 31);
+    --background-white: rgb(255, 255, 255);
+    --background-black: rgb(0, 0, 0);
+
+    --text-white: rgb(255, 255, 255);
+    --text-black: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--background-white);
+    height: 80px;
+}
+
+nav {
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav button {
+    padding: 10px 20px;
+}
+
+section.top button {
+    padding: 10px 65px
+}
+
+nav button,
+section.top button {
+    border: none;
+    background-color: var(--background-black);
+    color: var(--background-white);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+nav button:hover {
+    background-color: var(--background-light);
+    color: var(--text-black);
+    font-size: 26px;
+}
+
+section.top button:hover {
+    background-color: var(--background-white);
+    color: var(--text-black);
+    font-size: 26px;
+}
+
+.top {
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10% 0 0 10%;
+    height: 800px;
+    background-color: var(--background-light);
+}
+
+.top h1 {
+    font-size: 70px;
+}
+
+.top h2 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.projects {
+    height: 800px;
+    background-color: aqua;
+}
+
+.contact {
+    height: 800px;
+    background-color: var(--background-dark);
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10% 0 0 10%;
+}
+
+.contact h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    color: var(--text-white);
+}
+
+.contact p {
+    color: var(--text-white);
+    font-size: 30px;
+}
+
+.form-area {
+    display: flex;
+    border-radius: 5px;
+    padding: 1em 0;
+}
+
+.form-area label {
+    color: var(--text-white);
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.msg-area {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.msg-area > textarea {
+    flex: 0.73;
+    min-width: 18em;
+    background: var(--background-dark-variant);
+    color: var(--text-white);
+    padding: 15px;
+    border: none;
+}
+
+.details-area {
+    order: 1;
+    margin-right: 1em;
+}
+
+.details-area input {
+    width: 100%;
+    background: var(--background-dark-variant);
+    color: var(--text-white);
+    border-radius: 5px;
+    border: none;
+    padding: 25px;
+}
+
+.details-area input,
+.details-area button {
+    margin-bottom: 1em;
+}
+
+.details-area button {
+    font-family: 'Bebas Neue', sans-serif;
+    background: var(--background-black);
+    font-size: 20px;
+    color: white;
+    border: 0;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.details-area button:hover {
+    background: var(--background-white);
+    color: var(--text-black);
+}
