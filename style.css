@@ -92,6 +92,11 @@ section.projects button:hover {
     gap: 20px;
 }
 
+.wrapper {
+    position: absolute;
+    top: 45%;
+}
+
 /* Resume */
 
 .resume {
@@ -140,7 +145,7 @@ section.projects button:hover {
 }
 
 .projects-header {
-    padding: 40px 200px;
+    padding: 40px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,7 +232,7 @@ article > div:hover {
     height: 800px;
     background-color: var(--background-dark);
     font-family: 'Bebas Neue', sans-serif;
-    padding: 10% 0 0 10%;
+    padding: 10%;
 }
 
 .contact h1 {
@@ -293,6 +298,7 @@ article > div:hover {
     color: white;
     border: 0;
     padding: 15px 50px;
+    margin-top: 20px;
     cursor: pointer;
     transition: all 500ms ease;
 }
@@ -303,7 +309,7 @@ article > div:hover {
 }
 
 /* Media Queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
    article {
     display: flex;
     flex-direction: column;
@@ -333,4 +339,29 @@ article > div:hover {
     padding: 15px 50px;
     justify-content: space-evenly;
    }
+}
+
+@media screen and (max-width: 1000px) {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects {
+        height: auto;
+    }
+
+    .resume h1 {
+        margin-left: 20px;
+    }
+
+@media screen and (max-width: 1200px) {
+    .project-details {
+        margin: 60px 20px;
+    }
+
+    .resume button {
+        padding: 15px 25px;
+        margin-right: 20px;
+    }
 }
