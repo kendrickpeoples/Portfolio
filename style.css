@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&display=swap');
 
 :root {
     --background-light: rgb(243, 243, 243);
@@ -140,8 +140,7 @@ section.projects button:hover {
 .projects {
     height: 800px;
     background-color: var(--background-light);
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .projects-header {
@@ -161,7 +160,7 @@ article {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     width: auto;
-    margin: 0 auto;
+    margin: 20px 100px;
 }
 
 article h1,
@@ -169,6 +168,7 @@ article h2,
 article p {
     color: var(--text-white);
 }
+
 
 article > div {
     height: 300px;
@@ -212,7 +212,8 @@ article > div:nth-of-type(4) {
 }
 
 .project-details p {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 article div > h2 {
@@ -224,6 +225,49 @@ article > div:hover {
     opacity: 0.7;
     cursor: pointer;
 }
+
+/* Languages */ 
+.languages {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--background-dark);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+
+.languages h1 {
+    font-weight: lighter;
+    color: var(--text-white);
+}
+
+.languages ul {
+    color: var(--text-white);
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* About */
+.about {
+    height: 800px;
+    background-color: var(--background-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--text-black);
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 
 
 /* Contact Section */
@@ -261,20 +305,13 @@ article > div:hover {
 .msg-area {
     display: flex;
     flex-direction: column;
-    order: 2;
 }
 
 .msg-area > textarea {
-    flex: 0.73;
     background: var(--background-dark-variant);
     color: var(--text-white);
     padding: 15px;
     border: none;
-}
-
-.details-area {
-    order: 1;
-    margin-right: 1em;
 }
 
 .details-area input {
@@ -313,6 +350,7 @@ article > div:hover {
    article {
     display: flex;
     flex-direction: column;
+    margin: 20px 20px;
    }
 
    .projects {
@@ -339,6 +377,7 @@ article > div:hover {
     padding: 15px 50px;
     justify-content: space-evenly;
    }
+
 }
 
 @media screen and (max-width: 1000px) {
